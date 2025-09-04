@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register TOTP Device</title>
+</head>
+<body>
+    <h2>Register TOTP Device (Google Authenticator)</h2>
+    <p>Scan this QR code with your Google Authenticator app:</p>
+    <img src="data:image/png;base64,{{ qr_code }}" alt="TOTP QR Code" />
+    <p>Or use this code: <code>{{ otp_uri }}</code></p>
+    <form method="post">
+        {% csrf_token %}
+        <label for="token">Enter the 6-digit code from your app:</label>
+        <input type="text" name="token" id="token" required />
+        <button type="submit">Verify</button>
+    </form>
+</body>
+</html>
+<!-- Removed: TOTP registration is now handled by Keycloak only. -->

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verify TOTP</title>
+</head>
+<body>
+    <h2>Verify TOTP Code</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label for="token">Enter the 6-digit code from your app:</label>
+        <input type="text" name="token" id="token" required />
+        <button type="submit">Verify</button>
+    </form>
+</body>
+</html>
+<!-- Removed: TOTP verification is now handled by Keycloak only. -->
