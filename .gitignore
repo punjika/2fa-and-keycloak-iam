@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg-info/
+*.egg
+*.log
+*.pot
+*.mo
+*.sqlite3
+*.db
+*.env
+.env
+venv/
+ENV/
+.env.*
+# VSCode
+.vscode/
+# OS
+.DS_Store
+Thumbs.db
+# Django
+*.sqlite3
+local_settings.py
+# Test
+coverage/
+htmlcov/
+.tox/
+.nox/
+.cache/
+.pytest_cache/
+# Backup
+*.bak
+*.swp
+*.swo
+# Misc
+*.orig
+*.tmp
+*.old
+*.pid
+*.seed
+*.log
+REMOVE_TOTP_BACKUP_*
